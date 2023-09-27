@@ -1,0 +1,10 @@
+rootProject.name = 'Zeuscloud'
+
+include ':app'
+include ':appscan'
+
+//includeBuild('../zeus-cloud') {
+//    dependencySubstitution {
+//        substitute module('com.github.nextcloud.android-common:ui') using project(':ui')
+//    }
+//}
