@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/logo"/>
+        app:srcCompat="@drawable/zeus_logo_on_black"/>
 
     <LinearLayout
         android:id="@+id/textBox"

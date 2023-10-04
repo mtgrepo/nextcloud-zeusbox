@@ -59,9 +59,9 @@ configurations.configureEach {
 }
 
 // semantic versioning for version code
-def versionMajor = 3
-def versionMinor = 27
-def versionPatch = 0
+def versionMajor = 1//3
+def versionMinor = 1//27
+def versionPatch = 0//0
 def versionBuild = 0 // 0-50=Alpha / 51-98=RC / 90-99=stable
 
 
@@ -105,15 +105,17 @@ android {
 
         multiDexEnabled true
 
-        versionCode versionMajor * 10000000 + versionMinor * 10000 + versionPatch * 100 + versionBuild
+        versionCode 1
+        versionName "1.0.0 Internal Testing"
+//        versionMajor * 10000000 + versionMinor * 10000 + versionPatch * 100 + versionBuild
 
-        if (versionBuild > 89) {
-            versionName "${versionMajor}.${versionMinor}.${versionPatch}"
-        } else if (versionBuild > 50) {
-            versionName "${versionMajor}.${versionMinor}.${versionPatch} RC" + (versionBuild - 50)
-        } else {
-            versionName "${versionMajor}.${versionMinor}.${versionPatch} Alpha" + (versionBuild + 1)
-        }
+//        if (versionBuild > 89) {
+//            versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+//        } else if (versionBuild > 50) {
+//            versionName "${versionMajor}.${versionMinor}.${versionPatch} RC" + (versionBuild - 50)
+//        } else {
+//            versionName "${versionMajor}.${versionMinor}.${versionPatch} Alpha" + (versionBuild + 1)
+//        }
 
         // adapt structure from Eclipse to Gradle/Android Studio expectations;
         // see http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Configuring-the-Structure
